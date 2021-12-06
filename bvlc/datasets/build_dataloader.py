@@ -1,7 +1,7 @@
 from mmcv.runner import get_dist_info
 from torch.utils.data import DataLoader
 
-from dsgcn.datasets.sampler import (DistributedSampler,
+from bvlc.datasets.sampler import (DistributedSampler,
                                     DistributedSequentialSampler)
 
 
