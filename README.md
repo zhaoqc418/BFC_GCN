@@ -62,5 +62,10 @@ The supported datasets are listed below.
 ## Run
 
 ### Test
-
+```bash
+sh scripts/bvlc/test_bvlc_ms1m.sh
+```
 ### Train
+```bash
+sh scripts/bvlc/train_bvlc_ms1m.sh
+```
