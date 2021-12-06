@@ -1,14 +1,14 @@
-from .test_lgcn import test_lgcn
-from .train_lgcn import train_lgcn
+from .test_gcn import test_gcn
+from .train_gcn import train_gcn
 
 __factory__ = {
-    'test_lgcn': test_lgcn,
-    'train_lgcn': train_lgcn,
+    'test_gcn': test_gcn,
+    'train_gcn': train_gcn,
 }
 
 
 def build_handler(phase):
-    key_handler = '{}_lgcn'.format(phase)
+    key_handler = '{}_gcn'.format(phase)
     if key_handler not in __factory__:
         raise KeyError("Unknown op:", key_handler)
     return __factory__[key_handler]

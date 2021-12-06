@@ -5,8 +5,8 @@ from collections import OrderedDict
 import torch
 from mmcv.runner import Runner, obj_from_dict
 from mmcv.parallel import MMDataParallel
-from lgcn.datasets import build_dataset, build_dataloader
-from lgcn.online_evaluation import online_evaluate
+from bvlc.datasets import build_dataset, build_dataloader
+from bvlc.online_evaluation import online_evaluate
 
 
 def batch_processor(model, data, train_mode):
@@ -27,7 +27,7 @@ def batch_processor(model, data, train_mode):
     return outputs
 
 
-def train_lgcn(model, cfg, logger):
+def train_gcn(model, cfg, logger):
     # prepare data loaders
     for k, v in cfg.model['kwargs'].items():
         setattr(cfg.train_data, k, v)

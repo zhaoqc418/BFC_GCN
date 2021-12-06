@@ -8,8 +8,8 @@ import torch.nn.functional as F
 from mmcv.runner import load_checkpoint
 from mmcv.parallel import MMDataParallel
 
-from lgcn.datasets import build_dataset, build_dataloader
-from lgcn.online_evaluation import online_evaluate
+from bvlc.datasets import build_dataset, build_dataloader
+from bvlc.online_evaluation import online_evaluate
 
 from utils import (clusters2labels, intdict2ndarray, get_cluster_idxs,
                    write_meta, get_small_cluster_idxs, Timer)
@@ -87,7 +87,7 @@ def test(model, dataset, cfg, logger):
     return np.array(edges), np.array(scores), len(dataset), edges_scores_dict
 
 
-def test_lgcn(model, cfg, logger):
+def test_gcn(model, cfg, logger):
     for k, v in cfg.model['kwargs'].items():
         setattr(cfg.test_data, k, v)
     dataset = build_dataset(cfg.test_data)

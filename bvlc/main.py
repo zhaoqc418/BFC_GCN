@@ -9,8 +9,8 @@ from mmcv import Config
 from utils import (create_logger, set_random_seed, rm_suffix,
                    mkdir_if_no_exists)
 
-from lgcn.models import build_model
-from lgcn import build_handler
+from bvlc.models import build_model
+from bvlc import build_handler
 # from utils import rm_suffix
 
 
