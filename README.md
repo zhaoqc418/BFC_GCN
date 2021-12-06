@@ -1,5 +1,12 @@
 # BVLC
 
+## Requirements
+* Python >= 3.6
+* PyTorch >= 0.4.0
+* [faiss](https://github.com/facebookresearch/faiss)
+* [mmcv](https://github.com/open-mmlab/mmcv)
+
+
 ## Dataset Preparation
 
 ### Data format
@@ -51,3 +58,9 @@ The supported datasets are listed below.
     - Original Images: [OneDrive](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155095455_link_cuhk_edu_hk/ErY9MmAhmlZMvO9y9SagNOcBISISEdzBfJshn-poD84QPQ?e=PRRpBe). We re-align [MS1M-ArcFace](https://www.dropbox.com/s/wpx6tqjf0y5mf6r/faces_ms1m-refine-v2_112x112.zip?dl=0) with our own face alignment model.
     - Pretrained Face Recognition Model: [GoogleDrive](https://drive.google.com/open?id=1eKsh7x-RUIHhIJ1R9AlUjsJdsdbh2qim). For using the model to extract features, please check the [code](https://github.com/yl-1993/hfsoftmax/tree/ltc) and use [sample data](https://drive.google.com/open?id=1VkZWZmBnaQlTaTNQSQXe-8q8Z8pNuI-D) to have a try.
 - [DeepFashion](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html): [GoogleDrive](https://drive.google.com/open?id=15B5Ypj8_U9rhcuvkrkCZQAgV4cfes7aV) or [BaiduYun](https://pan.baidu.com/s/174XeXhCOBAMryKcz9IDc8g) (passwd: 8fai)
+
+## Run
+
+### Test
+
+### Train
