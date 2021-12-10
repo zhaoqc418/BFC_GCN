@@ -1,6 +1,6 @@
 from .test_gcn import test_gcn
 from .train_gcn import train_gcn
-from .test_gcn import test_gcn_centraility
+from .test_gcn_centraility import test_gcn
 
 __factory__ = {
     # 'test_gcn': test_gcn,

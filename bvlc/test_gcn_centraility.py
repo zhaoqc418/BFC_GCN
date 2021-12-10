@@ -87,7 +87,7 @@ def test(model, dataset, cfg, logger):
     return edges_scores_dict, np.array(edges), np.array(scores), len(dataset)
 
 
-def test_lgcn(model, cfg, logger):
+def test_gcn(model, cfg, logger):
     for k, v in cfg.model['kwargs'].items():
         setattr(cfg.test_data, k, v)
     dataset = build_dataset(cfg.test_data)
