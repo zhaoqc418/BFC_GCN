@@ -2,7 +2,7 @@ import os.path as osp
 
 # data locations
 prefix = './data'
-test_name = 'newpart5_test'
+test_name = 'part5_test'
 knn = 80
 knn_method = 'faiss'
 
@@ -11,7 +11,7 @@ test_data = dict(
     label_path=osp.join(prefix, 'labels', '{}.meta'.format(test_name)),
     knn_graph_path=osp.join(prefix, 'knns', test_name,
                             '{}_k_{}.npz'.format(knn_method, knn)),
-    k_at_hop=[80, 10],
+    k_at_hop=[40, 10],
     active_connection=10,
     is_norm_feat=True,
     is_sort_knns=True,
@@ -26,6 +26,11 @@ batch_size_per_gpu = 16
 # testing args
 max_sz = 250
 max_sz = 100
+max_sz = 650
+max_sz = 600
+small_size_th = 50
+local_neighbor_size = 5
+score_th = 0.99
 
 step = 0.6
 pool = 'avg'

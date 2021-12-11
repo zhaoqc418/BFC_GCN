@@ -2,7 +2,7 @@ import os.path as osp
 
 # data locations
 prefix = './data'
-test_name = 'newpart3_test'
+test_name = 'part3_test'
 knn = 80
 knn_method = 'faiss'
 
@@ -25,8 +25,11 @@ batch_size_per_gpu = 16
 
 # testing args
 max_sz = 200
-max_sz = 150
-
+max_sz = 650
+max_sz = 580
+small_size_th = 50
+local_neighbor_size = 5
+score_th = 0.99
 step = 0.6
 pool = 'avg'
 
