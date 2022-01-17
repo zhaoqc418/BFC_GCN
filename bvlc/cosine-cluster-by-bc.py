@@ -7,9 +7,9 @@ from multiprocessing import Pool
 import multiprocessing as mp
 import os
 
-from graph import graph_clustering_dynamic_th, graph_clustering_onetime_th, graph_clustering_th, \
-    graph_clustering_erosion
-from misc import dump_data, clusters2labels
+from proposals.graph import graph_clustering_dynamic_th, graph_clustering_onetime_th, graph_clustering_th\
+    # , \    graph_clustering_erosion
+from utils.misc import dump_data, clusters2labels
 from utils import Timer
 from evaluation import evaluate, accuracy
 
